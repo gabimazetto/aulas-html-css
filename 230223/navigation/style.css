@@ -1,0 +1,33 @@
+/* SELETOR (o que era tag no HTML é SELETOR no CSS */
+/* id -> identificar de forma única um elemento de um documento;
+   class -> identificar um elemento de um conjunto em um documento.  */
+
+
+h1 /* seletor*/ {
+    color: purple;
+}
+#p1 /*seletor; forma de selecionar o id "#" */{
+    font-size: 20px;
+    font-family: Verdana, sans-serif;
+}
+#p1 i {
+    color: red;
+}
+#p2 {
+    font-size: 30px;
+    font-family: Verdana, sans-serif;
+}
+
+.artigo /*seletor; forma de selecionar o id "." */ {
+    width: 300px; /*largura*/
+}
+
+.artigo img /*seletor; modo de especificar qual é a imagem que vai mudar. no caso a imagem que está dentro do id artigo*/{
+    width: 100%;
+}
+
+.artigo small {
+    font-size: 15px;
+    font-family: Calibri, sans-serif;
+}
+

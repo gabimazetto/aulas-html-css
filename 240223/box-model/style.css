@@ -1,0 +1,56 @@
+/*
+    Box-Model -> Modelo de Caixa
+    Largura (width)
+    Altura (height
+    Borda (border)
+    Espaçamento interno
+    Margem
+
+*/
+
+* {
+    /*
+        border-box -> Tamanho da caixa -> width
+        content-box -> tamanho da caixa -> width + padding + border
+    */
+    box-sizing: border-box; /*Todas as caixas vão ser nessa configuração. O conteúdo vai caber exatamente na caixa*/
+}
+
+header {
+    width: 100%; /*Largura da caixa; o header vai ter a largura de 100% da página*/
+    height: 100px; /*Altura da caixa*/
+    border: 2px solid green; /*Largura > tipo > cor*/
+    /* border-width: 2px;
+    border-style: solid, dashed, dotted, double, none etc..
+    border-color: black; */
+    border-radius: 8px; /*Arredondamento das bordas*/
+    /*border-left/right/top/bottom -> borda só em uma direção (como se fosse uma linha só.*/
+
+    /*Espaçamento interno*/
+    /* padding: 30px; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px; */
+    padding: 20px 30px 20px 30px; /*top > right, bottom, left (sentido horario)*/
+    /*Para aplicar 20px dos lados e 30px em cima e embaixo:
+    padding: 20px, 30px;*/
+
+}
+
+/* #circulo {
+    width: 100px;
+    height: 100px;
+    border: 2px solid blue;
+    border-radius: 50%;
+}
+#circulo, img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+} */
+
+header a {
+    /*As mesmas coisas q se aplicam a padding se aplicam a margin. formatação e etc*/
+    margin: 20px;
+}

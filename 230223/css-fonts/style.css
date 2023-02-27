@@ -1,0 +1,39 @@
+/* O "*" é o Seletor Universal. Seleciona tudo dentro do html*/
+
+
+* {
+    /* Alterar fonte padrão do documento*/
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 
+colocar os seletores com vírgula para o css entender que as coisas têm que acontecer nos dois. se não colocar a vírgula, ele vai entender que é pra mudar um h2 que existe dentro do h1  */
+
+h1, h2 {
+    /*Alterar peso da fonte (negrito ou mais "fino")*/
+    font-size: 35px;
+    /*Alterar tamanho da fonte*/
+    font-weight: 700;
+}
+
+h1 {
+    /*Sombreamento no texto (ordem: x > y > espessura > cor */
+    text-shadow: 2px 2px 2px rgb(238, 0, 119);
+}
+
+
+h2 {
+    /*Aplicar itálico na fonte*/
+    font-style: italic;
+    /*mudar a cor da fonte (NÃO É FONTCOLOR, É SÓ COLOR)*/
+    color:#f10c49; /*rgd, hexadecimal e escrito em inglês*/
+}
+
+p {
+    /*Alinhamento de texto*/
+    text-align: justify; /* justify, left, right, center */
+    /*Transformações no texto*/
+    text-transform: uppercase; /*uppercase, lowercase, capitalize (primeira letra de cada palavra fica maiuscula), */
+    /*Altura da linha*/
+    line-height: 25px;
+}

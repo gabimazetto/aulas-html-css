@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Aula 2 de HTML e CSS - MÍDIAS</title>
+  </head>
+  <body>
+    <h2 title="Título de imagem">Imagem</h2>
+    <figure>
+      <!--tag pra quando tiver uma legenda pra imagem.-->
+      <img
+        title="Capa da série Eu, a Patroa e as crianças"
+        width="400px"
+        src="./mídias/eu-a-patroa-e-as-criancas.jpeg"
+        alt="Capa da série Eu, a Patroa e as crianças."
+      />
+      <figcaption>Capa da série Eu, a Patroa e as crianças.</figcaption>
+    </figure>
+
+    <h2>Vídeo</h2>
+    <video
+      width="300px"
+      src="./mídias/abertura-chaves.mp4"
+      controls="true"
+    ></video>
+    <!--atributos booleanos no html não precisa necessariamente ter um valor. se ele não está presente ele é falso, se ele está, é verdadeiro (mas não tem problema ter ali)-->
+
+    <h2>Áudio</h2>
+    <audio src="./mídias/abertura-um-maluco-no-pedaco.mp3" controls></audio>
+    <hr />
+    <br /><br />
+
+    <h2>Listas</h2>
+    <h3>Listas não ordenadas</h3>
+    <!--lista que a ordem não importa. lista de compras por exemplo-->
+    <!-- ul: unorderd lis; li: list item -->
+    <ul>
+      <li>Farinha de trigo</li>
+      <li>Leite</li>
+      <li>Ovos</li>
+      <li>Açucar</li>
+    </ul>
+    <br />
+    <h3>Lista Ordenada</h3>
+    <!--Lista com uma ordem-->
+    <!-- ol: ordered lis -->
+    <ol>
+      <li>Misture todos os ingredientes em uma tigela;</li>
+      <li>Aqueça o forno em 180ºC;</li>
+      <li>Coloque a mistura na forma e leve ao forno;</li>
+      <li>Espere esfriar por 20 min e sirva em fatias.</li>
+    </ol>
+    <br />
+    <h3>Listas aninhadas</h3>
+    <!--Lista dentro de uma lista-->
+    <h4>Listas de comidas</h4>
+    <ul>
+      <li>Café da manhã</li>
+      <ul>
+        <li>Pão</li>
+        <li>Ovos</li>
+        <li>Café</li>
+      </ul>
+      <li>Almoço</li>
+      <ul>
+        <li>Arroz</li>
+        <li>Feijão</li>
+        <li>Bife</li>
+      </ul>
+      <li>Lanche</li>
+      <ol>
+        <li>Bolo</li>
+        <li>Suco</li>
+        <li>Bolacha</li>
+      </ol>
+      <li>Jantar</li>
+      <ol>
+        <li>Pizza</li>
+        <li>Hamburguer</li>
+        <li>Refri</li>
+      </ol>
+    </ul>
+    <h4>Como Lavar as roupas</h4>
+    <ol>
+      <li>
+        Recolha suas roupas
+        <ol>
+          <li>Veja nos quartos</li>
+          <li>Veja na sala</li>
+          <li>Veja na escada</li>
+          <li>Veja no banheiro</li>
+        </ol>
+      </li>
+      <li>
+        Leve à maquina
+        <ol>
+          <li>Verifique se há objetos dentros dos bolsos das roupas</li>
+          <li>Separe as roupas coloridas das brancas</li>
+        </ol>
+      </li>
+    </ol>
+
+    <h3>Listas de Descrição</h3>
+    <!--Se eu tenho um título e preciso fazer a descrição desse título;-->
+    <!-- dl: description lis -->
+    <dl>
+      <dt>HTML</dt>
+      <dd>
+        O HTML (HyperText Markup Language ou Linguagem de Marcação de Texto) é a
+        linguagem que estrutura os elementos visuais de uma página Web.
+      </dd>
+      <dt>CSS</dt>
+      <dd>
+        O CSS (Cascading Style Sheet ou Folhas de Estilo em Cascata) é uma
+        linguagem de estilização utilizada para melhorar a aparência visual de
+        elementos em um documento HTML.
+      </dd>
+    </dl>
+
+    <!-- 
+            Atributos Específicos - só funcionam em determinadas tags (src, href, width, height, target...)
+            Atributos Globais - funcionam em praticamente todas as tags (id, class, title.)
+         -->
+    <hr><br><br>
+
+     <h2>Tabelas</h2>
+     <!-- tr: table row (linha da tabela) 
+          td: table data (dados da tabela)
+          th: table head (cabeçalho da tabela)-->
+     <table border="1">
+        <colgroup>
+            <col style="width: 150px;"> <!--coluna-->
+            <col style="width: 150px;">
+            <col style="width: 70px;">
+            <col style="width: 80px;">
+        </colgroup>
+        <tr>
+            <th>Nome</th>
+            <th>Área</th>
+            <th>Idade</th>
+            <th>Estado</th>
+        </tr>
+        <!-- 
+            Feito com atalho. Selecionar a primeira tag e clicar "ctrl + d" até selecionar tudo o que eu quero mudar. Com isso, é só mudar uma e todas que estão selecionadas vão mudar também. 
+         <tr>
+            <th>Gabriel B</th>
+            <th>Full Stack</th>
+            <th>21 anos</th>
+            <th>Ceará</th>
+        </tr> -->
+        <tr>
+            <td>Gabriel B</td>
+            <td>Full Stack</td>
+            <td>21 anos</td>
+            <td rowspan="3">Ceará</td>
+        </tr>
+        <tr>
+            <td>Almir</td>
+            <td>Full Stack</td>
+            <td>23 anos</td>
+        </tr>
+        <tr>
+            <td>Igor</td>
+            <td>Eng. de Dados</td>
+            <td>30 anos</td>
+        </tr>
+        <tr>
+            <td colspan="4" align="center">Professores da SoulCode</td>
+        </tr>
+     </table>
+
+     <h3>Times do Brasil</h3>
+     <table border="3">
+    <!-- thead: "cabeçalho da tabela"
+         tbody: "corpo" da tabela
+         tfoot: "rodapé" da tabela
+                isso tudo é mais na questão semântica.. ajuda na questão da acessibilidade, porque tá bem estruturado.-->
+        <thead>
+        <tr>
+            <th>Time</th>
+            <th>Score</th>
+            <th>Gols</th>
+            <th>Vitórias</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Fluminense</td>
+            <td>100</td>
+            <td>6</td>
+            <td>8</td>            
+        </tr>
+        <tr>
+             <td>Flamengo</td>
+            <td>200</td>
+            <td>8</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Vasco</td>
+            <td>300</td>
+            <td>9</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>Botafogo</td>
+            <td>400</td>
+            <td>4</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Coritiba</td>
+            <td>1000</td>
+            <td>100</td>
+            <td>50</td>
+        </tr></tbody>
+        <tfoot>
+            <td colspan="4">Times brasileiros</td>
+        </tfoot>
+     </table>
+
+  </body>
+</html>

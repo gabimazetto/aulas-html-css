@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+    <!-- lang é o idioma que vai estar no código (questão de acessibilidade)
+    é um ATRIBUTO- informações a mais que aplicamos a uma tag; não faz
+    mal se não tiver, mas às vezes é bom ter -->
+<head>
+    <meta charset="UTF-8">
+    <!-- metadados- tag para configuração (não é uma tag q abre e fecha)
+     tem que colocar dentro do head; geralmente bem no início
+     "utf -8" é o metadado que define que estamos usando
+     caracteres da língua portuguesa. tem outros tipo de metadados.-->
+    <title>Hello World</title>
+</head>
+<body>
+    <!--<h1>Título principal</h1> -->
+    <!-- h1 é uma tag especial para que a gente possa definir o título 
+    de uma página. geralmente é o título geral, então geralmente só tem
+    um h1 por página (mas pode ser mais) -->
+   <!-- <h2>Subtítulo do título principal (h2)</h2>
+    <h3>Subtítulo do subtítulo (h3)</h3>
+    <h4>Subtítulo do subtítulo (h4)</h4>
+    <h5>Subtítulo do subtítulo (h5)</h5>
+    <h6>Subtítulo do subtítulo (h6)</h6>-->
+    <!-- Texto sem tag não tem nenhuma formatação.-->
+
+    <a href="#title-one">Título 1</a> <br>
+    <a href="#title-two">Título 2</a>
+    <hr>
+
+
+    <h1 id="title-one">Título 1</h1>
+    <p> <!-- a tag p é de um parágrafo -->
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores praesentium <b>laboriosam</b> <!--pode usar uma tag dentro de outra tag--> ad molestias, vel recusandae similique ducimus! Accusamus nulla at <em>mollitia ducimus</em>  explicabo harum, magnam cupiditate eum praesentium saepe repellat?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet <i>consectetur</i>, adipisicing elit. Quia earum a, nostrum  totam placeat voluptatibus autem iste, omnis libero ad <i><b> <!--tag dentro de tag dentro de tag. às vezes a ordem tem importância, então tem que lembrar disso--> amet maiores, sequi ex est asperiores iusto neque.</b></i> Similique, <strong>debitis</strong>.<!--strong deixa em destaque. parece a mesma coisa, mas sintaticamente é diferente. geralmente o strong é utilizado em algum botão ou algo do tipo (quando não é utilizado o css); também facilida na acessibilidade de leitura para deficientes visuais (em é a mesma lógica)-->
+        <!-- utilizar as tags direito ajuda no SEO-->
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sapiente non optio quae aperiam numquam fuga, sit, at dolor commodi magni odio doloribus maiores in qui mollitia ratione cupiditate voluptatibus.
+    </p>
+<hr> <!--Horizontal Row - tag (vazia) q faz uma linha para dividir temas-->
+    <h2 id="title-two">Título 2</h2>
+    <p>
+        Uma página web é, <small>basicamente</small>, comporta por arquivos HTML, CSS e JavaScript. <br><!--break row; tag (vazia) usada para quebrar a linha-->
+        O navegador é a ferramenta responsáve lpor interpretar esses arquivos e mostrar a página renderizada para o usuário.
+    </p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque nisi perspiciatis rerum! Rerum cum veritatis illum sunt voluptatum repellat tempora veniam accusamus dignissimos voluptate neque cumque quasi, suscipit laboriosam accusantium.
+    </p>
+    <hr>
+    Acesse a <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">documentação</a>  oficial do JavaScript para mais informações.<br>
+
+     <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">
+        <button>Clique aqui</button>
+     </a> 
+     <br>
+     
+     <img width="200px" height="200px" src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="logo html">
+
+     <img width="200px" height="200px" src="./CSS3_logo_and_wordmark.svg" alt="logo css">
+    
+</body>
+</html>

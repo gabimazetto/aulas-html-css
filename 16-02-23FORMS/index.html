@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Aula 3 de HTML e CSS - FORMS</title>
+  </head>
+  <body>
+    <h3>Cadastro de Perfil</h3>
+
+    <!-- <form> Container do Formulário -->
+    <!-- <input> <select>  <textarea> - campo do formulário-->
+    <!-- <label> Rótulo de um campo do formulário -->
+    <form action="">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label for="cNome">Nome:</label>
+        <input
+          type="text"
+          id="cNome"
+          required
+          name="nome"
+          minlength="1"
+          maxlength="70"
+        /><br />
+        <!--minimo e maximo de caracteres-->
+        <!-- "required" atributo de obrigatoriedade do campo. -->
+
+        <label for="cSenha">Senha:</label>
+        <input type="password" id="cSenha" required name="senha" /><br />
+
+        <label for="cEmail">E-mail:</label>
+        <input type="email" id="cEmail" required name="email" /><br />
+
+        <label for="cTel">Telefone</label>
+        <input type="tel" id="cTel" required name="telefone" /><br />
+
+        <label for="cInsta">Url do Instagram</label>
+        <input type="url" id="cInsta" name="url" /><br />
+
+        <label for="cIdade">Idade:</label>
+        <input
+          type="number"
+          id="cIdade"
+          required
+          name="idade"
+          min="0"
+          max="130"
+        /><br />
+
+        <label for="cDataNasc">Data de Nascimento</label>
+        <input type="date" id="cDataNasc" name="datanasc" "min="2000-01-01"
+        max="2023-02-16"><br />
+
+        <label for="cHoranasc">Hora Nascimento</label>
+        <input type="time" id="cHoranasc" name="horanasc" /><br />
+
+        <label for="cDateTime">Data e Hora do Nascimento</label>
+        <input type="datetime-local" id="cDateTime" name="dataEHora" />
+        <br /><!--isso complica a vida do dev n sei pq mas deve ser dificil.-->
+
+        <label for="cAvatar">Foto Perfil:</label>
+        <input type="file" id="cAvatar" name="avatar" /><br />
+        <!--o atributo "multiple" deixa colocar vários arquivos. e o "accept" deixa escolher o tipo de arquivo que é aceito (tem que colocar o valor no atributo - png/jgp/pdf etc)-->
+
+        <label>Sexo:</label>
+        <input id="cSexoMasc" type="radio" name="sexo" />
+        <label for="cSexoMasc">Masculino</label>
+        <input id="cSexoFem" type="radio" name="sexo" />
+        <label for="cSexoFem">Feminino</label>
+        <input id="cSexoNB" type="radio" name="sexo" />
+        <label for="cSexoNB">Não-Binárie</label> <br />
+        <!-- type radio e name sexo = pra selecionar só uma opção precisa colocar o type radio e o name igual nos inputs-->
+      </fieldset>
+
+      <fieldset>
+        <legend>Informações Adicionais</legend>
+        <label>Interesses:</label> <br />
+        <label for="cHumanas">Humanas</label>
+        <input id="cHumanas" type="checkbox" name="interesses" />
+        <label for="cExatas">Exatas</label>
+        <input id="cExatas" type="checkbox" name="interesses" />
+        <label for="cLinguagens">Linguagens</label>
+        <input id="cLinguagens" type="checkbox" name="interesses" />
+        <label for="cCiencias">Ciencias</label>
+        <input id="cCiencias" type="checkbox" name="interesses" /><br />
+
+        Escolha sua cor favorita: <br />
+        <input type="color" name="cor" /><br />
+
+        <label for="cIngles">Nível de Inglês</label>
+        <input
+          type="range"
+          id="cIngles"
+          name="ingles"
+          min="0"
+          max="10"
+          list="markers"
+        />10<br />
+        <datalist id="markers">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </datalist>
+
+        Escondido: (veja no inspecionar)
+        <input type="hidden" value="idDoCurso" name="escondido" /><br />
+
+        <label for="cTextarea">Conte um pouco sobre você:</label><br />
+        <textarea id="cTextarea" name="texto">
+        Escreva seu texto aqui
+      </textarea
+        >
+        <br />
+
+        <label for="cEscol">Escolaridade</label>
+        <select name="escolaridade" id="cEscol">
+          <option disabled selected>Selecione uma Opção</option>
+          <option value="">Ensino Fundamental Completo</option>
+          <option value="">Ensino Médio Completo</option>
+          <option value="">Ensino Superior Completo</option></select
+        ><br />
+      </fieldset>
+
+      <label for="cTermos">Aceito os termos de uso da plataforma.</label>
+      <input type="checkbox" id="cTermos" required name="termos" /><br />
+      <!-- 
+      disable: desabilita o input
+      name: não pode ser igual (só em alguns casos mas né)
+      value: quando se coloca o atributo value em alguma tag, é como se declarasse um valor. -->
+
+      <!--<input type="submit" value="Enviar"> igualzinho ao botão de enviar-->
+
+      <button type="submit">Submit</button>
+      <button type="button">Button (n faz nada)</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>

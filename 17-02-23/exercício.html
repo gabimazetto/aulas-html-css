@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+	<title>Página de Contato</title>
+</head>
+<body>
+
+	<header>
+		<h1>Minha Empresa</h1>
+		<nav>
+			<ul>
+                <li><a href="https://www.instagram.com/handmademinerva/"; target="_blank">Home</a></li>
+                <li><a href="https://www.instagram.com/handmademinerva/"; target="_blank">Produtos</a></li>
+                <li><a href="https://www.instagram.com/handmademinerva/"; target="_blank">Sobre</a></li>
+                <li><a href="https://www.instagram.com/handmademinerva/"; target="_blank">FAQ</a></li>
+                <li><a href="https://www.instagram.com/handmademinerva/"; target="_blank">Carrinho</a></li>
+            </ul>
+		</nav>
+	</header>
+
+	<main>
+		<section>
+			<h2>Contato</h2>
+
+			<p>Entre em contato conosco através do formulário abaixo ou pelos meios de contato listados na tabela.</p>
+            <fieldset>
+			<form action="">
+                
+                    <h3>Dados</h3>
+                    <label for="cNome">Nome: </label>
+                    <input type="text" id="cNome" name="nome" required><br>
+                    <label for="cTel">Telefone:</label>
+                    <input type="tel" id="cTel" name="tel" required><br>
+                    <label for="cEmail">E-mail:</label>
+                    <input type="email" name="email" id="cEmail" required><br>
+                    <label for="cPassword">Password: </label>
+                    <input type="password" id="cPassword" name="password" required><br>
+                    <label for="cIdade">Idade:</label>
+                    <input type="idade" id="cIdade" name="idade" required><br>
+                    <label for="avatar">Foto:</label>
+                    <input type="file" id="cAvatar" name="avatar" required><br>
+                    <label for="cAniver">Data de Nascimento:</label>
+                    <input type="date" id="cAniver" name="aniver" required><br>
+                    <label for="cHora">Horário pretendido:</label>
+                    <input type="time" id="cHora" name="hora" required>
+                </fieldset> <br>
+                <fieldset>
+                    <h3>Informações adicionais</h3>
+                    <label for="urlInsta">Url do Instagram:</label>
+                    <input type="url" id="urlInsta" name="urlinsta"><br>
+                    <label for="cRegiao">Regiao</label>
+                    <select name="regiao" id="cRegiao">
+                        <option disabled selected>Selecione uma região</option>
+                        <option value="">Sul</option>
+                        <option value="">Sudeste</option>
+                        <option value="">Noste</option>
+                        <option value="">Nordeste</option>
+                        <option value="">Centro Oeste</option>
+                    </select><br>
+                    <label for="cIngles">Nível de Inglês</label>
+                    <input type="range" id="cIngles" name="ingles" min="0"  max="10" list="markers"/>10<br />
+                        <datalist id="markers">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </datalist>
+                </fieldset>
+                <label for="cTermos">Aceito os termos de uso da plataforma.</label>
+                <input type="checkbox" id="cTermos" required name="termos" /><br>
+                <button type="submit">Enviar</button>
+            </form>
+
+		</section>
+
+		<section>
+			<h2>Informações de Contato</h2>
+            <table border="1"> 
+                <colgroup>
+                    <col width="15%">
+                    <col width="15%">
+                    <col width="20%">
+                    <col width="20%">
+                </colgroup>
+                <tr>
+
+                    <th>Nome</th>
+                    <th>Área</th>
+                    <th>Telefone</th>
+                    <th>E-mail</th>
+
+                </tr>
+                <tr>
+                    <td>Ana</td>
+                    <td>Legal</td>
+                    <td>(41) 9 9999-9999</td>
+                    <td>email@email.com</td>
+                </tr>
+                <tr>
+                    <td>Maria</td>
+                    <td>Chato</td>
+                    <td>(41) 8 8888-8888</td>
+                    <td>email@email.com</td>
+                </tr><tr>
+                    <td>João</td>
+                    <td>Legalzin</td>
+                    <td>(41) 9 7777-7777</td>
+                    <td>email@email.com</td>
+                </tr><tr>
+                    <td>José</td>
+                    <td>Chatin</td>
+                    <td>(41) 9 6666-6666</td>
+                    <td>email@email.com</td>
+                </tr>                
+            </table>
+		</section>        
+	</main>
+
+	<footer>
+		<p>&copy; 2023 Minha Empresa. Todos os direitos reservados.</p>
+        <ul>
+            <li><a href="https://www.instagram.com/handmademinerva/"; target="_blank">Home</a></li>
+            <li><a href="https://www.instagram.com/handmademinerva/"; target="_blank">Produtos</a></li>
+            <li><a href="https://www.instagram.com/handmademinerva/"; target="_blank">Sobre</a></li>
+            <li><a href="https://www.instagram.com/handmademinerva/"; target="_blank">FAQ</a></li>
+            <li><a href="https://www.instagram.com/handmademinerva/"; target="_blank">Carrinho</a></li>
+        </ul>
+	</footer>
+
+</body>
+</html>

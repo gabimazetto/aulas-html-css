@@ -1,0 +1,65 @@
+<!-- 
+    CSS (Cacading Style Sheet ) no HTML: 
+    *inlie -> style:"";
+
+    *interno -> <style></style> (seletor: seleciona akgum elemento pra fazer a mudança css)
+        li {
+            font-size: 10px;
+        }
+        é interessante estar dentro da tag <head>
+    
+    *externo -> style.css (link)
+-->
+<!-- 
+    Prioridade do CSS:
+    inline > interno > externo
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula de HTML e CSS</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <img src="./images/logo.png" alt="">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="./contato.html">Contato</a>
+                </li>
+                <li>
+                    <a href="./imprensa.html">Imprensa</a>
+                </li>
+                <li>
+                    <a href="./sobre.html">Sobre</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1 style="font-family: Arial; color: green;">Home</h1>
+            <p id="p1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum quasi dolores molestiae obcaecati! Placeat esse ullam exercitationem possimus, dolor molestiae animi at beatae suscipit laudantium eos! Temporibus at <i> voluptatum </i> a.</p>
+            <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quasi dolores molestiae obcaecati! Placeat esse ullam exercitationem possimus, dolor molestiae animi at beatae suscipit <i>laudantium</i> eos! Temporibus at voluptatum a.</p>
+            
+        </section>
+        <section>
+            <article class="artigo">
+                <img src="./images/eu-a-patroa-e-as-criancas.jpeg" alt="">
+                <small>
+                    Capa da Série Eu, a patroa e as crianças. Ator que interpreta o Michael é pego por fãs em shopping em São Paulo. 
+                </small>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <small> <strong> &copy; Gabi.com.</strong> Todos os direitos reservados</small>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+HTMl -> Hypertext Markup Language (Linguagem de Marcação de Hyperteto)
+Hypertext -> Texto
+Markup -> Marcação (tags)
+Language -> Linguagem (possui Sintaxe/regras)
+
+<tag>Texto qualquer que vai aparecer na página</tag>
+
+<!DOCTYPE html>
+<html>
+    <!-- atalho para comentário: ctrl + ;  -->
+    <!--Comentários: não vai ser lido pelo navegador.-->
+    <!-- transformar texto em comentário: colocar o mouse no texto  
+    ( na linha) e apertar ctrl + : -->
+    <head>
+        <title>Hello World</title>
+    </head>
+<body>
+    Hello, World
+
+
+</body>
+</html>
+
+atalho pra estrutura: ! + enter
+atalho pra voltar: ctrl + z
+atalho para copiar e colar: colocar o mouse na linha e ctrl +c e ctrl + v 
+atalho pra quebrar linha só no vscode pra ficar bonitinho: alt + z
+
+tags q não tem fechamento são chamadas de tags vazias - podemos colocar
+/ antes de fechar, tipo <meta etc etc />

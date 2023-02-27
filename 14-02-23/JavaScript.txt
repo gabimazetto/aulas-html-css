@@ -1,0 +1,4 @@
+JavaScript está presente em praticamente todas as páginas Web.
+Em uma página html o JavaScript é como se fosse os "músculos"; 
+Ele leva dinamismo à pagina web. Deixa ela mais interativa e responsiva. 
+Inspecionar > console > onde fica o JavaScript (ou apertar f12);

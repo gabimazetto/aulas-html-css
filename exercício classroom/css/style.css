@@ -1,0 +1,144 @@
+.nav1 {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    height: 80px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+.logo {
+    size: 10px;
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.logo1 {
+    width: 70px;
+    height: 70px;
+    border-radius: 70%;
+    vertical-align: middle;
+    border: 1px;
+    box-shadow: 1px 1px 3px black;
+}
+
+.menu {
+    padding-top: 30px;
+    width: 50%;
+    text-align: center;
+    display: flex;
+}
+.menu a {
+    color: rgb(9, 9, 220);
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 14px;
+    margin-right: 50px;
+}
+
+body {
+    background-image: url(../img/vecteezy_orange-grunge-background-with-space-for-text-abstract_16189266.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h2{
+    font-size: 20px;
+    color: rgb(255, 191, 145);
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    border: 1px;
+    box-shadow: 1px 1px 3px rgb(255, 50, 19);
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+div {
+    display: flex;
+    flex-direction: row;    
+}
+
+div .tops {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+section {
+    border: solid 1px blue;
+    margin-bottom: 10px
+}
+
+section .home {
+    display: flex;
+    text-align: justify;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: left;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+figcaption {
+    font-size: 14px;
+    font-style: oblique;
+    text-align: center;
+}
+
+footer {
+    padding-top: 30px;
+    width: 50%;
+    text-align: center;
+    display: flex;
+}
+footer a {
+    display: flex;
+    flex-direction: row;
+    color: rgb(219, 219, 255);
+    text-decoration: none;
+    font-style: italic;
+    font-size: 14px;
+    margin-right: 50px;
+    margin-left: 50px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 50px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+footer p {
+    margin-right: 50px;
+    color: rgb(219, 219, 255);
+    text-decoration: none;
+    font-style: italic;
+    font-size: 14px;
+    text-align: end;
+}

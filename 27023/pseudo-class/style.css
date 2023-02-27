@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+a {
+    display: block;
+    width: 100px;
+    height: 40px;
+    padding: 10px 5px;
+    background-color: rgb(25, 148, 25);
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: Arial;
+    border-radius: 8px;
+
+
+    text-decoration: none; /* remove o underline do link */
+    color: white;
+
+    /* Transições (Aplicar efeito de suavidade na troca de estilo das propriedades CSS) -> tem que colocar no seletor original, não na pseudo classe*/
+    /* transition-property: background-color; */
+    transition-property: all; /* Definir propriedade de transição */
+    transition-duration: 0.5s; /* Definir a duração da transição*/
+}
+
+/* Pseudo Classe -> representa o estado do elemento*/
+
+
+/* a:visited {
+    background-color: rgb(234, 34, 177);
+} */
+
+a:hover {
+    background-color: rgb(10, 63, 10);
+    transform: scale(1.1); /* Aumenta a escala de elemento em 110%*/
+    /* width: 105px;
+    height: 45px; */
+}
+
+a:active {
+    background-color: rgb(148, 25, 25);
+}
