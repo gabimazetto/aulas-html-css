@@ -1,0 +1,125 @@
+/*
+    Flex-Box -> Caixa Flexível
+    *conatiner
+    *itens / content
+    *direção
+    -RESPONSIVIDADE- -> capacidade do site de se adequar a diferentes tamanhos de tela
+*/
+
+
+
+/*
+    CONTAINER:
+    *display: flex;
+    *flex-directions;
+    *justify-content;
+    *align-items;
+    *align-content;
+    *gap;
+    *flex-wrap;
+
+    ITEMS/CONTENT
+    *flex-grow;
+    *flex-shrink;
+    *flex;
+    *align-self
+
+*/
+
+
+
+.border {
+    padding: 0;
+    border: 2px solid black;
+}
+
+.container {
+    width: 500px;
+    height: 300px;
+
+
+    display: flex;/* container. tem que ser no container dos itens que queremos alinhar*/
+    /* Direção dos itens do container*/
+    flex-direction: row ; /* row (padrão); column; row-reverse; column reverse */
+    /* Alinhamento do conteúdo segindo a direção definida (se a direção for row, vai alinhar em linha, se for em column, em coluna, etc.)*/
+    justify-content: space-evenly; /* flex-start (inicio do flex); flex-end (final do flex); center; space-between; space-around; space-evenly */
+    /* Alinhamento dos itens seguindo a direção perpendicular à direção definida */
+    align-items: center; /* flex-start (inicio do flex); flex-end (final do flex); center; strech (estica os elementos para eles ocuparem toda a largura da linha ou da coluna); */
+}
+
+#triangulo {
+    align-self: flex-start; /*mesmas propriedades do align-items. auto alinhamento*/
+}
+#circulo{
+    align-self: flex-end;
+}
+.container2 {
+    width: 50%;
+    height: 300px;
+
+    display: flex;
+    flex-direction: row;
+    /* Quebra de linha/coluna dos conteúdos */
+    flex-wrap: wrap; /*nowrap; wrap*/
+    justify-content: center;
+    align-items: center;
+    /* Alinhamento do conteúdo (linha/coluna) seguindo a direção definida (flex-wrap)*/
+    align-content: center;/* flex-start (inicio do flex); flex-end (final do flex); center; strech (padrão); space-between; space-around; space-evenly */
+    /* gap: grade de separação entre os itens
+    row-gap: 20px;
+    column-gap: 20px; */
+    gap: 20px;
+}
+
+.container3 {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.container3 img {
+    /* Crescimento flexível (aumenta os >elementos< de acordo com o espaço que tem no container*/
+    flex-grow: 1;
+    /* Diminuir de forma flexível*/
+    flex-shrink: 1;
+    /* flex: 1; flex-grow e flex-shrink ao mesmo tempo (diminui e aumenta proporcionalmente no container) */
+}
+
+header {
+    box-sizing: border-box;
+    padding: 0 20px;
+    width: 100%;
+    border: 2px solid blue;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav {
+    border: 2px solid purple;
+    flex-grow: 1;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-4 {
+    width: 50%;
+    display: flex;
+}
+
+.container-4 img {
+    flex: 1;
+}
+
+#c {
+    flex: 2;
+}
+
+#t {
+    /* Indica a posição a partir da posição original */
+    order: -1;
+}
+
