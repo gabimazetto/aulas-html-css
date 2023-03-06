@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+
+
+#logo-header {
+    width: 70px;
+    height: 70px;
+}
+
+.offcanvas-header img {
+    width: 60px;
+    height: 60px;
+}
+
+div.dropdown {
+    margin-left: 20px;
+}
+
+.container {
+    margin-top: 70px;    
+}
+
+.card {
+    margin-top: 20px;
+    max-width: 250px;
+    /* max-height: 300px; */
+}
+
+
+
+
